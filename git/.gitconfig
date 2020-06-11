@@ -1,0 +1,24 @@
+[user]
+	email = dominic.depasquale@gmail.com
+	name = Dom DePasquale
+	signingkey = 86D1F9AF4B801BC9
+
+[push]
+	default = simple
+	followTags = true
+
+[alias]
+	c = commit
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+	st = status
+	brinfo = for-each-ref --sort=-committerdate refs/heads/ refs/remotes/ --format='%(HEAD) %(color:yellow)% (objectname:short)%(color:reset) - (%(color:bold green)%(committerdate:relative)%(color:reset)) %(color:blue)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname)'
+
+[fetch]
+	prune = true
+
+[commit]
+	#gpgSign = true
+
+[url "git@git.psu.edu:"]
+    insteadOf = https://git.psu.edu/

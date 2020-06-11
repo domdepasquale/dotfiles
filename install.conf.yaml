@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.bashrc: 
+      path: bash/.bashrc
+      force: true
+    ~/.profile:
+      path: bash/.profile
+      force: true
+    ~/.gitconfig: git/.gitconfig
+    ~/.vim: vim/.vim
+    ~/.vimrc:
+      relink: true
+      path: vim/.vimrc
+    ~/.config/:
+      glob: true
+      path: config/*
+      force: true
