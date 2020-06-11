@@ -11,6 +11,9 @@
       force: true
     ~/.gitconfig: git/.gitconfig
     ~/.vim: vim/.vim
+    ~/.inputrc: 
+      path: inputrc
+      force: true
     ~/.vimrc:
       relink: true
       path: vim/.vimrc
