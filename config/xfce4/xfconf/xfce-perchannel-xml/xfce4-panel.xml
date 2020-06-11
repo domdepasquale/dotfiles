@@ -46,6 +46,7 @@
       <property name="icon-size" type="empty"/>
       <property name="symbolic-icons" type="empty"/>
       <property name="known-items" type="array">
+        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="nm-applet"/>
         <value type="string" value="org.guido-berhoerster.code.package-update-indicator"/>
       </property>
