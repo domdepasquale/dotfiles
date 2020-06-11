@@ -33,3 +33,5 @@ test -z "$PROFILEREAD" && . /etc/profile || true
 #    /usr/bin/fortune
 #    echo
 #fi
+
+/usr/bin/setxkbmap -option "ctrl:nocaps" 
