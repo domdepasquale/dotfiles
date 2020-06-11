@@ -9,6 +9,9 @@
     ~/.profile:
       path: bash/.profile
       force: true
+    ~/.aliases:
+      path: bash/.aliases
+      force: true
     ~/.gitconfig: git/.gitconfig
     ~/.vim: vim/.vim
     ~/.inputrc: 
