@@ -9,7 +9,7 @@
     <property name="show_dock_shadow" type="empty"/>
     <property name="show_frame_shadow" type="empty"/>
     <property name="show_popup_shadow" type="empty"/>
-    <property name="workspace_count" type="int" value="1"/>
+    <property name="workspace_count" type="int" value="2"/>
     <property name="wrap_windows" type="empty"/>
     <property name="tile_on_move" type="empty"/>
     <property name="activate_action" type="string" value="bring"/>
