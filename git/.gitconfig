@@ -22,3 +22,5 @@
 
 [url "git@git.psu.edu:"]
     insteadOf = https://git.psu.edu/
+[pull]
+	rebase = true

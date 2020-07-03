@@ -3,6 +3,9 @@
       relink: true
 
 - link:
+    ~/.zshrc: 
+      path: zsh/.zshrc
+      force: true
     ~/.bashrc: 
       path: bash/.bashrc
       force: true

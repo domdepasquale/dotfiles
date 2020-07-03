@@ -51,6 +51,7 @@
       <property name="square-icons" type="empty"/>
       <property name="size-max" type="empty"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="network"/>
         <value type="string" value="redshift-gtk"/>
         <value type="string" value="package update indicator"/>
         <value type="string" value="networkmanager applet"/>
