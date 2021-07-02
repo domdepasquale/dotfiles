@@ -1,0 +1,94 @@
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$time\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$status
+$character"""
+
+[directory]
+truncate_to_repo = false
+truncation_length = 0
+style = "white"
+
+[gcloud]
+disabled = true
+
+[aws]
+disabled = true
+displayed_items = "profile"
+
+[hostname]
+ssh_only = false
+style = "green"
+format = '[$hostname]($style)\] '
+
+[username]
+show_always = true
+format = "\\[[$user]($style)@"
+style_user = "green"
+
+[terraform]
+disabled = true
+
+[status]
+disabled = false
+format = '\[RC: [$symbol$status]($style)\] '
+
+[kubernetes]
+format = '\([$context](red):[$namespace](cyan)\) '
+disabled = false
+
+[nodejs]
+disabled = true
+

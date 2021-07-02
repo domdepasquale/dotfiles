@@ -1,0 +1,39 @@
+[user]
+	email = dominic.depasquale@gmail.com
+	name = Dom DePasquale
+	signingkey = 86D1F9AF4B801BC9
+
+[push]
+	default = simple
+	followTags = true
+
+[alias]
+	c = commit
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+	st = status
+	brinfo = for-each-ref --sort=-committerdate refs/heads/ refs/remotes/ --format='%(HEAD) %(color:yellow)% (objectname:short)%(color:reset) - (%(color:bold green)%(committerdate:relative)%(color:reset)) %(color:blue)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname)'
+	sync = !git pull && git push
+	chore = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"chore: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"chore(${2}): ${@:3}\"; else git commit -m \"chore: ${@}\"; fi }; f"
+	docs = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"docs: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"docs(${2}): ${@:3}\"; else git commit -m \"docs: ${@}\"; fi }; f"
+	feat = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"feat: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"feat(${2}): ${@:3}\"; else git commit -m \"feat: ${@}\"; fi }; f"
+	fix = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"fix: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"fix(${2}): ${@:3}\"; else git commit -m \"fix: ${@}\"; fi }; f"
+	localize = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"localize: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"localize(${2}): ${@:3}\"; else git commit -m \"localize: ${@}\"; fi }; f"
+	refactor = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"refactor: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"refactor(${2}): ${@:3}\"; else git commit -m \"refactor: ${@}\"; fi }; f"
+	style = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"style: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"style(${2}): ${@:3}\"; else git commit -m \"style: ${@}\"; fi }; f"
+	test = "!f() { [[ -z \"$GIT_PREFIX\" ]] || cd \"$GIT_PREFIX\" && if [ -z \"$1\" ]; then git commit -m \"test: \" -e; elif [ \"$1\" == \"-s\" ]; then git commit -m \"test(${2}): ${@:3}\"; else git commit -m \"test: ${@}\"; fi }; f"
+
+[fetch]
+	prune = true
+
+[commit]
+	gpgSign = true
+
+[url "git@git.psu.edu:"]
+	insteadof = https://git.psu.edu/
+
+[core]
+
+	sshCommand = ssh -i /keybase/team/sweinfra.sudo/k8s-qa-aitci.key
+[pull]
+	rebase = true
