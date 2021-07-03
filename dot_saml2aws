@@ -1,0 +1,15 @@
+[default]
+app_id               = 
+url                  = https://as1.fim.psu.edu/idp/profile/SAML2/SOAP/ECP
+username             = dad264
+provider             = ShibbolethECP
+mfa                  = auto
+skip_verify          = false
+timeout              = 0
+aws_urn              = urn:amazon:webservices
+aws_session_duration = 3600
+aws_profile          = saml
+resource_id          = 
+subdomain            = 
+role_arn             = 
+
