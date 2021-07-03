@@ -12,4 +12,3 @@ aws_profile          = saml
 resource_id          = 
 subdomain            = 
 role_arn             = 
-
