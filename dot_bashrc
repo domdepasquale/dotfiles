@@ -119,3 +119,13 @@ fi
 export HOMEBREW_NO_ANALYTICS=1
 
 eval "$(starship init bash)"
+
+[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
+
+eval "$(direnv hook bash)"
+
+if [ -f ~/.oauth ]; then
+  source ~/.oauth
+fi
+
+complete -C /home/linuxbrew/.linuxbrew/bin/aws_completer aws

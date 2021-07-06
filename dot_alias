@@ -29,10 +29,11 @@ alias rm='rm -I'
 alias rm="rm -I"
 alias sti="ssh stirling.blue.psu.edu -q -D 9995 -L 9990:localhost:9990 -L 3389:mgt-p01.ais.psu.edu:3389 -L 3390:dc-rdp2.ais.psu.edu:3389 -X"
 alias tf='terraform'
+alias tf13='/home/linuxbrew/.linuxbrew/opt/terraform@0.13/bin/terraform'
 alias tftest='terraform validate && terraform fmt'
 alias tftest11='terraform-11 validate -check-variables=false && terraform-11 fmt'
-alias tg='TERRAGRUNT_TFPATH=/usr/local/bin/terraform terragrunt'
-alias tg13='TERRAGRUNT_TFPATH=/home/dad264/bin/terraform-13 terragrunt'
+alias tg='TERRAGRUNT_TFPATH=/home/linuxbrew/.linuxbrew/opt/terraform@0.13/bin/terraform terragrunt'
+alias tg13='TERRAGRUNT_TFPATH=/home/linuxbrew/.linuxbrew/opt/terraform@0.13/bin/terraform terragrunt'
 alias tg14='TERRAGRUNT_TFPATH=/home/dad264/bin/terraform-14 terragrunt'
 alias vi='vim'
 alias xkpasswd='hsxkpasswd'
