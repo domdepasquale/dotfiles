@@ -1,0 +1,19 @@
+k8s:
+  provider: minikube
+minikube:
+  #memory: 4096
+  #cpu: 2
+  k8s:
+    version: v1.18.9
+kind:
+  name: devtool
+  workers: 2
+  k8s:
+    version: v1.18.9
+build:
+  skipCompile: false
+  runTests: true
+  openServices: false
+  webaccess:
+    user: dad264
+
