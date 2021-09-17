@@ -29,8 +29,8 @@
 [commit]
 	gpgSign = true
 
-[url "git@git.psu.edu:"]
-	insteadof = https://git.psu.edu/
+[url "ssh://git@git.psu.edu/"]
+	insteadOf = https://git.psu.edu/
 
 [core]
 

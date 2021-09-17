@@ -1,5 +1,5 @@
 k8s:
-  provider: minikube
+  provider: kind
 minikube:
   #memory: 4096
   #cpu: 2
@@ -9,7 +9,7 @@ kind:
   name: devtool
   workers: 2
   k8s:
-    version: v1.18.9
+    version: v1.19.11
 build:
   skipCompile: false
   runTests: true

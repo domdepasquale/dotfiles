@@ -16,7 +16,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+HISTSIZE=10000
 HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
@@ -118,7 +118,14 @@ fi
 
 export HOMEBREW_NO_ANALYTICS=1
 
+export LESS="-M -I -R"
+
 eval "$(starship init bash)"
+
+function set_win_title(){
+    echo -ne "\033]0; $(basename "$PWD") \007"
+}
+starship_precmd_user_func="set_win_title"
 
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 
@@ -129,3 +136,12 @@ if [ -f ~/.oauth ]; then
 fi
 
 complete -C /home/linuxbrew/.linuxbrew/bin/aws_completer aws
+
+export PATH="${PATH}:${HOME}/.krew/bin"
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/go/bin" ] ; then
+    PATH="$HOME/go/bin:$PATH"
+fi
+
+export GOPRIVATE=git.psu.edu

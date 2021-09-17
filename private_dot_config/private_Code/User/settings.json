@@ -1,4 +1,15 @@
 {
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "workbench.startupEditor": "none",
+    "git.rebaseWhenSync": true,
+    "go-template.patterns": [
+        "**/*.tpl",
+        "**/*.yaml"
+    ],
+    "redhat.telemetry.enabled": false,
+    "git.confirmSync": false,
+    "git.pullTags": false,
+    "window.restoreWindows": "none",
+    "window.zoomLevel": 1
 }
